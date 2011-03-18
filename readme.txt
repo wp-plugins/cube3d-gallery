@@ -1,13 +1,35 @@
 ===   &#9733; CUBE3D, images gallery, menu, slider. Plugin or widget.   &#9733;===
 Contributors: pluginswp.com
 Donate link: http://www.pluginswp.com
-Tags: images, 3d, photos, pictures, image gallery, cube3d, cylinder3d, admin, easy, javascript, jquery, marquee, module, sidebar, simple, widget, flash, nextgen, image, picture, photo, widgets, pictures, photo albums, Post, admin, media, gallery, images, slideshow, flash, photos, lightbox, AJAX, presentation, portfolio, album, posts, plugin, flip, page, book, flipping, page flip, pictures, ads, buttons, carousel photos, carousel gallery, cms, effects, embed, free flash, gallery, iphone, ipod, javascript,  media library, menu, menus, MU, photo, rotate, smooth gallery, swf, widget, wordpress,
-
+Tags: images, 3d, photos, pictures, image gallery, cube3d, cylinder3d, admin, easy, javascript, jquery, marquee, module, sidebar, simple, widget, flash, nextgen, image, picture, photo, widgets, pictures, photo albums, Post, admin, media, gallery, images, slideshow, flash, photos, lightbox, AJAX, presentation, portfolio, album, posts, plugin, flip, page, book, flipping, page flip, pictures, ads, buttons, carousel photos, carousel gallery, cms, effects, embed, free flash, gallery, iphone, ipod, javascript,  media library, menu, menus, MU, photo, rotate, smooth gallery, swf, widget, wordpress
 Requires at least: 2.0.2
 Tested up to: 3.1
 Stable tag: 4.3
 
-With this plugin you can create 3D cube or cylinder photo galleries or menus from the images in a folder. Very easy.
+&#9733;&#9733;&#9733; Cube3d GALLERY is a flash real 3D with an expectacular desing. 
+Cube3d Gallery is perfect to create:
+<ul>
+  <li>  3D photo galleries, </li>
+  <li>3D portfolios</li>
+  <li>3D menus</li>
+  <li>3D slideshow</li>
+  <li>3D headers</li>
+  <li>3D banners</li>
+  <li>3D catalogs for your products</li>
+  <li>All that you can imagine </li>
+</ul>
+Cube3d Gallery can be used  like module or widget in your wordpress sites. 
+
+To display the plugin in your Posts or pages type [cube3d_gallery ID], where ID is the carousel ID.
+
+For create and configure the gallery press in your Wordpress admin: cube3d.
+
+	Additional Plugin Information:
+<ul>
+  <li><a href="http://www.pluginswp.com/cube3d-gallery/" target="_blank">Manual and config examples </a></li>
+  <li><a href="http://www.pluginswp.com/" target="_blank">Download more wordpress plugins</a> 
+  </li>
+</ul>	
 
 == Description ==
 
@@ -65,4 +87,4 @@ Once installed and activated, and the default plugin works correctly. The parame
 
 == Changelog ==
 
-= 1.0 =
+= 1.1 =
