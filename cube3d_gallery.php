@@ -19,13 +19,15 @@ function cube3d_gallery_head() {
 	  
 	  <script>!window.jQuery && document.write(\' <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/jquery.js"></script>\')</script> 
 
-  <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox-jquery.js"></script>
+    <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox-jquery.js"></script>
   <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox.js"></script>
   <link href="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/a.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox.css">
 	
 	<script type="text/javascript">
-		$(document).ready(function(){
+	var $j = jQuery.noConflict();
+
+		$j(document).ready(function(){
 		    var options = {
 		        resizeLgImages:     true, loadingImage: "' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/images/loading.gif",
 		        displayNav:         true, handleUnsupported:  \'remove\',
