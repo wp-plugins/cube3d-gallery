@@ -13,12 +13,10 @@ $nombrebox="Webpsilon".rand(99, 99999);
 function cube3d_gallery_head() {
 	
 	$site_url = get_option( 'siteurl' );
-			echo '<script src="' . $site_url . '/wp-content/plugins/cube3d-gallery/Scripts/swfobject_modified.js" type="text/javascript"></script>
+			echo '
+			
+	<script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/jquery.js"></script>
 	  <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/swfobject.js"></script>
-	  
-	  
-	  <script>!window.jQuery && document.write(\' <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/jquery.js"></script>\')</script> 
-
     <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox-jquery.js"></script>
   <script type="text/javascript" src="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/shadowbox.js"></script>
   <link href="' . $site_url . '/wp-content/plugins/cube3d-gallery/inc/a.css" rel="stylesheet" type="text/css">
@@ -226,28 +224,28 @@ function cube3d_gallery_instala(){
    $sql = " CREATE TABLE $table_name(
 		id mediumint( 9 ) NOT NULL AUTO_INCREMENT ,
 		row tinytext NOT NULL ,
-		folder tinytext NOT NULL ,
-		zoom1 tinytext NOT NULL ,
-		zoom2 tinytext NOT NULL ,
-		speed tinytext NOT NULL ,
-		onover tinytext NOT NULL ,
-		links tinytext NOT NULL ,
-		titles tinytext NOT NULL ,
-		vertical tinytext NOT NULL ,
-		target tinytext NOT NULL ,
-		transparency tinytext NOT NULL ,
-		width tinytext NOT NULL ,
-		height tinytext NOT NULL ,
-		imageslink tinytext NOT NULL ,
-		imagebg tinytext NOT NULL ,
-		alpha tinytext NOT NULL ,
-		menu1 tinytext NOT NULL ,
-		menu2 tinytext NOT NULL ,
-		menu3 tinytext NOT NULL ,
-		menu4 tinytext NOT NULL ,
-		menu5 tinytext NOT NULL ,
-		menu6 tinytext NOT NULL ,
-		menu7 tinytext NOT NULL ,
+		folder longtext NOT NULL ,
+		zoom1 longtext NOT NULL ,
+		zoom2 longtext NOT NULL ,
+		speed longtext NOT NULL ,
+		onover longtext NOT NULL ,
+		links longtext NOT NULL ,
+		titles longtext NOT NULL ,
+		vertical longtext NOT NULL ,
+		target longtext NOT NULL ,
+		transparency longtext NOT NULL ,
+		width longtext NOT NULL ,
+		height longtext NOT NULL ,
+		imageslink longtext NOT NULL ,
+		imagebg longtext NOT NULL ,
+		alpha longtext NOT NULL ,
+		menu1 longtext NOT NULL ,
+		menu2 longtext NOT NULL ,
+		menu3 longtext NOT NULL ,
+		menu4 longtext NOT NULL ,
+		menu5 longtext NOT NULL ,
+		menu6 longtext NOT NULL ,
+		menu7 longtext NOT NULL ,
 		PRIMARY KEY ( `id` )	
 	) ;";
    
@@ -275,29 +273,29 @@ if(empty($re))
   $sql = " CREATE TABLE $table_name(
 		id mediumint( 9 ) NOT NULL AUTO_INCREMENT ,
 		row tinytext NOT NULL ,
-		folder tinytext NOT NULL ,
-		zoom1 tinytext NOT NULL ,
-		zoom2 tinytext NOT NULL ,
-		speed tinytext NOT NULL ,
-		onover tinytext NOT NULL ,
-		links tinytext NOT NULL ,
-		titles tinytext NOT NULL ,
-		vertical tinytext NOT NULL ,
-		target tinytext NOT NULL ,
-		transparency tinytext NOT NULL ,
-		width tinytext NOT NULL ,
-		height tinytext NOT NULL ,
-		imageslink tinytext NOT NULL ,
-		imagebg tinytext NOT NULL ,
-		alpha tinytext NOT NULL ,
-		menu1 tinytext NOT NULL ,
-		menu2 tinytext NOT NULL ,
-		menu3 tinytext NOT NULL ,
-		menu4 tinytext NOT NULL ,
-		menu5 tinytext NOT NULL ,
-		menu6 tinytext NOT NULL ,
-		menu7 tinytext NOT NULL ,
-		PRIMARY KEY ( `id` )	
+		folder longtext NOT NULL ,
+		zoom1 longtext NOT NULL ,
+		zoom2 longtext NOT NULL ,
+		speed longtext NOT NULL ,
+		onover longtext NOT NULL ,
+		links longtext NOT NULL ,
+		titles longtext NOT NULL ,
+		vertical longtext NOT NULL ,
+		target longtext NOT NULL ,
+		transparency longtext NOT NULL ,
+		width longtext NOT NULL ,
+		height longtext NOT NULL ,
+		imageslink longtext NOT NULL ,
+		imagebg longtext NOT NULL ,
+		alpha longtext NOT NULL ,
+		menu1 longtext NOT NULL ,
+		menu2 longtext NOT NULL ,
+		menu3 longtext NOT NULL ,
+		menu4 longtext NOT NULL ,
+		menu5 longtext NOT NULL ,
+		menu6 longtext NOT NULL ,
+		menu7 longtext NOT NULL ,
+		PRIMARY KEY ( `id` )
 	) ;";
 	$wpdb->query($sql);
 
@@ -314,7 +312,7 @@ if(isset($_POST['borrar'])) {
 	if(isset($_POST['id'])){	
 	if($_POST["imageslink".$_POST['id']]=="") $_POST["imageslink".$_POST['id']]=1;
 
-$sql= "UPDATE $table_name SET `row` = '".$_POST["row".$_POST['id']]."', `folder` = '".$_POST["folder".$_POST['id']]."', `zoom1` = '".$_POST["zoom1".$_POST['id']]."', `zoom2` = '".$_POST["zoom2".$_POST['id']]."', `speed` = '".$_POST["speed".$_POST['id']]."', `onover` = '".$_POST["onover".$_POST['id']]."', `links` = '".$_POST["links".$_POST['id']]."', `titles` = '".$_POST["titles".$_POST['id']]."', `target` = '".$_POST["target".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `transparency` = '".$_POST["transparency".$_POST['id']]."', `vertical` = '".$_POST["vertical".$_POST['id']]."', `imageslink` = '".$_POST["imageslink".$_POST['id']]."', `alpha` = '".$_POST["alpha".$_POST['id']]."', `menu1` = '".$_POST["menu1".$_POST['id']]."', `menu2` = '".$_POST["menu2".$_POST['id']]."', `menu3` = '".$_POST["menu3".$_POST['id']]."', `menu4` = '".$_POST["menu4".$_POST['id']]."', `menu5` = '".$_POST["menu5".$_POST['id']]."', `menu6` = '".$_POST["menu6".$_POST['id']]."', `menu7` = '".$_POST["menu7".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
+$sql= "UPDATE $table_name SET `row` = '".$_POST["row".$_POST['id']]."', `folder` = '".$_POST["folder".$_POST['id']]."', `zoom1` = '".$_POST["zoom1".$_POST['id']]."', `zoom2` = '".$_POST["zoom2".$_POST['id']]."', `speed` = '".$_POST["speed".$_POST['id']]."', `onover` = '".$_POST["onover".$_POST['id']]."', `links` = '".$_POST["links".$_POST['id']]."', `titles` = '".$_POST["titles".$_POST['id']]."', `target` = '".$_POST["target".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `transparency` = '".$_POST["transparency".$_POST['id']]."', `vertical` = '".$_POST["vertical".$_POST['id']]."', `imageslink` = '".$_POST["imageslink".$_POST['id']]."', `alpha` = '".$_POST["alpha".$_POST['id']]."', `menu1` = '".$_POST["menu1".$_POST['id']]."', `menu2` = '".$_POST["menu2".$_POST['id']]."', `menu3` = '".$_POST["menu3".$_POST['id']]."', `menu4` = '".$_POST["menu4".$_POST['id']]."', `menu5` = '".$_POST["menu5".$_POST['id']]."', `menu6` = '".$_POST["menu6".$_POST['id']]."', `menu7` = '".$_POST["menu7".$_POST['id']]."', `imagebg` = '".$_POST["imagebg".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
 			$wpdb->query($sql);
 	}
 	$myrows = $wpdb->get_results( "SELECT * FROM $table_name" );
