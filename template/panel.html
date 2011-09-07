@@ -1,0 +1,79 @@
+﻿<div class="wrap"> 
+	<form method="post" action="">
+		<fieldset>
+			<legend><strong>CUBE3D <?php echo $id; ?>. Write in your Posts or pages: [cube3d_gallery <?php echo $id; ?> /]</strong></legend>
+		  <p>&nbsp;</p>
+	      <table width="100%" border="0" cellspacing="4" cellpadding="0">
+		      <tr>
+		        <td><strong>Gallery name</strong></td>
+		        <td><input type='text' id='imagebg<?php echo $id; ?>'  name='imagebg<?php echo $id; ?>'  value='<?php echo $imagebg; ?>'/></td>
+		        <td>&nbsp;</td>
+		        <td><strong>Images Folder</strong></td>
+		        <td><input  name='folder<?php echo $id; ?>' type='text' id='folder<?php echo $id; ?>'  value='<?php echo $folder; ?>' size="40"/>
+	            Sample: images/</td>
+		        <td>&nbsp;</td>
+	        </tr>
+		      <tr>
+		        <td><strong>Flash Width</strong></td>
+		        <td><input  name='width<?php echo $id; ?>' type='text' id='width<?php echo $id; ?>'  value='<?php echo $width; ?>' size="6"/>
+	            px or %, default: 100%</td>
+		        <td>&nbsp;</td>
+		        <td><label for="height3" accesskey="o"><strong>Flash Height</strong></label></td>
+		        <td><input  name='height<?php echo $id; ?>' type='text' id='height<?php echo $id; ?>'  value='<?php echo $height; ?>' size="6"/>
+	            px, default 300px</td>
+		        <td>&nbsp;</td>
+	        </tr>
+		      <tr>
+		        <td><strong>Zoom</strong></td>
+		        <td><label for="zoom3" accesskey="i">
+		          <input  name='zoom1<?php echo $id; ?>' type='text' id='zoom1<?php echo $id; ?>'  value='<?php echo $zoom1; ?>' size="6"/>
+		          Number, samples: -500, 500 </label></td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	        </tr>
+		      <tr>
+		        <td><strong>X position</strong></td>
+		        <td><label for="menu3" accesskey="g">
+                  <input  name='menu1<?php echo $id; ?>' type='text' id='menu1<?php echo $id; ?>'  value='<?php echo $menu1; ?>' size="6"/>
+                  Number, samples: -200, 200</label></td>
+		        <td>&nbsp;</td>
+		        <td><strong>Y position</strong></td>
+		        <td><label for="menu4" accesskey="o">
+		          <input  name='menu2<?php echo $id; ?>' type='text' id='menu2<?php echo $id; ?>'  value='<?php echo $menu2; ?>' size="6"/>
+		          Number, samples: 100, -100</label></td>
+		        <td>&nbsp;</td>
+	        </tr>
+		      <tr>
+		        <td colspan="2"><label>
+                <input name="imageslink<?php echo $id; ?>" type="checkbox" id="imageslink<?php echo $id; ?>" value="0" <?php if($imageslink==0) echo ' checked="checked"'; ?> />
+                    <strong>Images Lightbox</strong></label>
+                  <input name="id" type="hidden" id="id" value="<?php echo $id; ?>" /></td>
+		        <td><span title="Haz clic para obtener traducciones alternativas">Ajax image fullscreen</span><span title="Haz clic para obtener traducciones alternativas"></span></td>
+		        <td><strong>Link target</strong></td>
+		        <td><input type='text' id='target<?php echo $id; ?>'  name='target<?php echo $id; ?>'  value='<?php echo $target; ?>'/></td>
+		        <td>&nbsp;</td>
+	        </tr>
+		      <tr>
+		        <td><br/>
+                <label for="titles2" accesskey="o"><strong>Image titles</strong></label></td>
+		        <td><textarea name="titles<?php echo $id; ?>" cols="30" rows="5" id="titles<?php echo $id; ?>"><?php echo $titles; ?></textarea></td>
+		        <td>One title for line</td>
+		        <td><strong>Image Links</strong></td>
+		        <td><textarea name="links<?php echo $id; ?>" cols="40" rows="5" id="links<?php echo $id; ?>"><?php echo $links2; ?></textarea></td>
+		        <td>One link for line, images lightbox not selected to work.</td>
+	        </tr>
+	      </table>
+	      
+		    <br/>
+		    <input type='submit' name='' value='SAVE cube3d <?php echo $id; ?>' />
+		
+</fieldset>
+	</form>
+  <form method="post" action="">
+	  <input name="borrar" type="hidden" id="borrar" value="<?php echo $id; ?>">
+     <input type='submit' name='' value='Delete cube3d gallery <?php echo $id; ?>' />
+    </form>
+  <hr />
+</div>
