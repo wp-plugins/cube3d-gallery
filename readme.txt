@@ -54,6 +54,7 @@ For create and configure the gallery press in your Wordpress admin: cube3d.
 	Additional Plugin Information:
 <ul>
   <li><a href="http://www.pluginswp.com/cube3d-gallery/" target="_blank">Manual and config examples </a></li>
+<li><a href="http://www.pluginswp.com/cylinder3d-gallery/" target="_blank">A similiar plugin, Cylinder 3D </a></li>
   <li><a href="http://www.pluginswp.com/" target="_blank">Download more wordpress plugins</a> 
   </li>
 </ul>	
@@ -86,5 +87,9 @@ Once installed and activated, and the default plugin works correctly. The parame
 2. Configuration.
 
 == Changelog ==
+
+= 2.1 =
+
+Allows you to select the pictures better.
 
 = 1.1 =

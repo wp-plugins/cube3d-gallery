@@ -3,7 +3,7 @@
 	Plugin Name: cube3d_gallery
 	Plugin URI: http://www.pluginswp.com/cube3d-gallery/
 	Description: Amazing 3D Flash Images gallery, slider, header or menus in Actionscript 3.
-	Version: 0.1
+	Version: 2.1
 	Author: Webpsilon
 	Author URI: http://www.pluginswp.com/
 */	
