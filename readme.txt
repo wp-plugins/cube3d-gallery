@@ -88,6 +88,10 @@ Once installed and activated, and the default plugin works correctly. The parame
 
 == Changelog ==
 
+= 2.2 =
+
+The plugin works fine, not imagen fixed bug.
+
 = 2.1 =
 
 Allows you to select the pictures better.
