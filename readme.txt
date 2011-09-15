@@ -45,6 +45,7 @@ Cube3d Gallery is perfect to create:
   <li>3D catalogs for your products</li>
   <li>All that you can imagine </li>
 </ul>
+
 Cube3d Gallery can be used  like module or widget in your wordpress sites. 
 
 To display the plugin in your Posts or pages type [cube3d_gallery ID], where ID is the carousel ID.
