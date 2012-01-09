@@ -26,8 +26,7 @@ For create and configure the gallery press in your Wordpress admin: cube3d.
 
 	Additional Plugin Information:
 <ul>
-  <li><a href="http://www.pluginswp.com/cube3d-gallery/" target="_blank">Manual and config examples </a></li>
-  <li><a href="http://www.pluginswp.com/" target="_blank">Download more wordpress plugins</a> 
+  <li><a href="http://www.pluginswp.com/cube3d-gallery/" target="_blank">Plugin page and demos</a></li>
   </li>
 </ul>	
 
